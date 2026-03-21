@@ -17,7 +17,7 @@ pipeline {
                 }
             }
         }
-        stage('Build') {
+        stage('Docker Build') {
             steps {
                 script{
                 dockerbuild("notes-app","latest","irfanlab")
